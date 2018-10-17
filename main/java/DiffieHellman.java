@@ -14,8 +14,6 @@ public class DiffieHellman
 
     public BigInteger publicKey(BigInteger primeA, BigInteger primeB, BigInteger privateKey)
     {
-        //BigInteger aKey = privateKey(primeA);
-
         //B to the power of aKey MOD primeA
 
         BigInteger answer = primeB.pow(privateKey.intValue()).mod(primeA);
@@ -28,17 +26,5 @@ public class DiffieHellman
         BigInteger answer = bobPublicKey.pow(alicePrivateKey.intValue()).mod(primeA);
 
         return answer;
-    }
-}
-
-class DiffieTesters
-{
-    public static void main(String[] aegfsgsg)
-    {
-        BigInteger rawrs = BigInteger.valueOf(10);
-
-        long meow = rawrs.longValue();
-
-
     }
 }
